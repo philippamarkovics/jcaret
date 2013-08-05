@@ -7,7 +7,7 @@
  */
 ﻿(function($,len,createRange,duplicate){
 	$.fn.caret=function(options,opt2){
-		var start,end,t=this[0],browser=$.browser.msie;
+		var start,end,t=this[0],browser=(/(msie) ([\w.]+)/.exec(navigator.userAgent.toLowerCase()) || [])[1];
 		if(typeof options==="object" && typeof options.start==="number" && typeof options.end==="number") {
 			start=options.start;
 			end=options.end;
