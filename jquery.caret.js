@@ -5,7 +5,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  *
  */
-﻿(function($,len,createRange,duplicate){
+(function($,len,createRange,duplicate){
 	$.fn.caret=function(options,opt2){
 		var start,end,t=this[0],browser=(/(msie) ([\w.]+)/.exec(navigator.userAgent.toLowerCase()) || [])[1];
 		if(typeof options==="object" && typeof options.start==="number" && typeof options.end==="number") {
